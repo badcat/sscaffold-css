@@ -21,6 +21,13 @@ html {
 	box-sizing: border-box;
 }
 
+/* Define the "system" font family */
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
 
 body {
 	/* Smoothly scroll between anchors. [4] */
@@ -855,7 +862,7 @@ html {
 
 
 body {
-    font-family: "Montserrat", "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+  font-family: "system";
 	font-size: 1.8em;
 	font-weight: 300;
 	line-height: 1.6;
@@ -864,7 +871,7 @@ body {
 
 main article,
 main section {
-	padding: 7.5rem 1.0rem;
+	padding: 1.0rem;
 	position: relative;
 	width: 100%;
 }
@@ -894,7 +901,6 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Montserrat", "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
 	font-weight: 500;
 }
 
@@ -968,7 +974,7 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-	font-family: Verdana;
+	font-family: "system";
 	font-size: 1.1rem;
 	font-weight: 700;
 	letter-spacing: .1rem;
